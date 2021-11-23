@@ -66,7 +66,6 @@ function AddMovie({ Movies, setMovies }) {
 							value={posterURL}
 							type="text"
 						/>
-						<input type="file" name="file" id="file" value={posterURL} />
 						<img
 							src={posterURL}
 							alt=""
