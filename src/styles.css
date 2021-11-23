@@ -1,0 +1,129 @@
+*,
+::after,
+::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+#root {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+#root hr {
+	width: 100%;
+	margin-bottom: 50px;
+	margin-top: 10px;
+}
+body {
+	background: #141414;
+	color: #fff;
+	text-align: center;
+}
+main {
+	display: flex;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+	width: 100%;
+	overflow: hidden;
+}
+/*Styling Header*/
+header {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	padding-bottom: 0;
+}
+header input {
+	margin-right: 25px;
+	padding: 10px;
+	width: 20rem;
+}
+.Title {
+	padding: 50px;
+	text-align: center;
+}
+.Filter {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+}
+.Filter button {
+	font-size: 12px;
+	border-radius: 15%;
+	border: none;
+	padding: 2px;
+	margin-right: 25px;
+	background-color: rgb(238, 238, 238);
+}
+/*Styling Movie Card*/
+.Card {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	max-width: 450px;
+	max-height: 650px;
+	margin: 10px;
+	overflow: hidden;
+	position: relative;
+	object-fit: cover;
+}
+.Card:hover {
+	box-shadow: 0 8px 16px 3px rgba(0, 0, 0, 0.6);
+	transform: translateY(-3px) scale(1.05) rotateX(15deg);
+	transition: all 0.1s ease-in-out;
+}
+.Card img {
+	z-index: 1;
+	position: relative;
+	min-width: 450px;
+	min-height: 650px;
+}
+.Card:hover img {
+	filter: blur(8px);
+}
+.Details {
+	z-index: 50;
+	position: absolute;
+	max-width: 450px;
+	transform: translateX(-1000px);
+	background-color: rgba(0, 0, 0, 0.5);
+	border: 2px 0px solid antiquewhite;
+	align-self: center;
+	justify-self: center;
+	padding: 15px;
+	visibility: hidden;
+}
+.Card:hover .Details {
+	transform: translateX(0);
+	transition: all 0.1s ease-in-out;
+	visibility: visible;
+}
+.Details h2 {
+	padding: 5px;
+}
+.Details p {
+	text-align: justify;
+}
+.Rating {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+/*Styling Form*/
+.form {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: #000;
+}
+.Modal {
+	color: #000;
+}
